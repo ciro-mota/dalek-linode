@@ -1,0 +1,36 @@
+name: Nuke Linode Resources
+
+on:
+  # schedule:
+  #   - cron:  '33 3 * * *'
+  workflow_dispatch:
+    inputs:
+      input:
+        description: "Manual Execution"
+        required: true
+        default: "Manual Execution"
+
+jobs:
+  Execution:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./scripts
+
+    steps:
+    - name: Setup Linode CLI
+      uses: linode/action-linode-cli@v1.1.0
+      with:
+        token: ${{ secrets.LINODE_TOKEN }}
+
+    - name: Check out the repository
+      uses: actions/checkout@v4
+
+    - name: Make the script files executable
+      run: chmod +x dalek-linode.sh
+    - name: Run the script
+      run: |
+        ./dalek-linode.sh
+      env:
+        LINODE_CLI_TOKEN: ${{ secrets.LINODE_TOKEN }}
+          
