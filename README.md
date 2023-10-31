@@ -2,19 +2,13 @@
 
 <p align="center">
     <img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge" />
-    <img alt="Shell Script" src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" />
+    <img alt="Linode" src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" />
     <img alt="Last Commit" src="https://img.shields.io/github/last-commit/ciro-mota/dalek-linode?style=for-the-badge" />
 </p>
 
 Just like the Daleks, exterminate resources from your Linode account.
 
 This project is inspired by what is <a href="https://github.com/rebuy-de/aws-nuke" target="_blank">aws-nuke</a> for automatic resource removal from an cloud provider account.
-
-## 🎁 Sponsoring
-
-If you like this work, give me it a star on GitHub, and consider supporting it buying me a coffee:
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
 
 ## ⚠️ Caution!
 
@@ -58,3 +52,9 @@ You can also use a Docker container to run the script manually when you want.
 - In the Dockerfile file, edit the `LINODE_CLI_TOKEN` variable and insert your Linode Personal Access Token.
 - Build.
 - Exec.
+
+## 🎁 Sponsoring
+
+If you like this work, give me it a star on GitHub, and consider supporting it buying me a coffee:
+
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
