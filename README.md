@@ -3,6 +3,8 @@
 <p align="center">
     <img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge" />
     <img alt="Linode" src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" />
+    <img alt="Shell Script" src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+    <img alt="Github Action " src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
     <img alt="Last Commit" src="https://img.shields.io/github/last-commit/ciro-mota/dalek-linode?style=for-the-badge" />
 </p>
 
