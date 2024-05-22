@@ -18,6 +18,13 @@ jobs:
         working-directory: ./scripts
 
     steps:
+    - name: Lint Dockerfile
+      uses: hadolint/hadolint-action@master
+      with:
+        dockerfile: "Dockerfile"
+        failure-threshold: error
+        format: json
+
     - name: Setup Linode CLI
       uses: linode/action-linode-cli@v1.1.0
       with:
@@ -33,4 +40,4 @@ jobs:
         ./dalek-linode.sh
       env:
         LINODE_CLI_TOKEN: ${{ secrets.LINODE_TOKEN }}
-          
+        
