@@ -5,7 +5,6 @@
     <img alt="Linode" src="https://img.shields.io/badge/Linode-00A95C?style=for-the-badge&logo=Linode&logoColor=white" />
     <img alt="Shell Script" src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
     <img alt="Github Action " src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
-    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/ciro-mota/dalek-linode?style=for-the-badge" />
 </p>
 
 Just like the Daleks, exterminate resources from your Linode account.
@@ -16,13 +15,13 @@ This project is inspired by what is <a href="https://github.com/rebuy-de/aws-nuk
 
 Be aware of the risks, you should not use this script in a production account.
 
-To reduce the range and mitigate some problems, there are some safety precautions:
+To reduce the range and mitigate some problems there are some safety precautions:
 
 1. By default only a [few paid features](https://www.linode.com/pricing/) are covered by this script: Linodes (VMs), Volumes, NodeBalancers and LKE (Kubernets cluster).
 
 2. Also by default, the script will check for the existence of tags with the string name `prod` or related tags and will ignore removing the resource that is associated with this tag.
 
-3. This tool will not read or remove any other resources than those listed above.
+3. This script will not read or remove any other resources than those listed above.
 
 
 ## 💸 Use Cases
