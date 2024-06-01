@@ -10,4 +10,5 @@ RUN apk update \
 	&& pip3 install linode-cli==5.49.1 --no-cache-dir --root-user-action=ignore --break-system-packages \
 	&& chmod +x /home/dalek-linode.sh
 
+ENTRYPOINT ["/bin/bash"]
 CMD ["./dalek-linode.sh"]
