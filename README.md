@@ -34,7 +34,7 @@ With this script your resources will be deleted days at a time pre-scheduled by 
 
 - Create a [Linode Personal Access Token](https://www.linode.com/docs/products/tools/api/guides/manage-api-tokens/).
 - Clone this repo.
-- Create a repository secret (`Settings` » `Secret and variables` » `actions` » `Secrets`) named `LINODE_TOKEN` and insert your Linode Personal Access Token.
+- Create a repository secret (`Settings` » `Secret and variables` » `Actions` » `New repository secret`) named `LINODE_TOKEN` and insert your Linode Personal Access Token.
 
 ## 💻 Usage
 
