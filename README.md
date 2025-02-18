@@ -50,8 +50,18 @@ schedule:
 You can also use a Docker container to run the script manually when you want.
 
 - Clone this repo.
-- In the Dockerfile file, edit the `LINODE_CLI_TOKEN` variable and insert your Linode Personal Access Token.
-- Build.
+- Export your token in a system variable: 
+
+```bash
+export LINODE_CLI_TOKEN="your-personal-access-token-here"`
+```
+
+- Build:
+
+```bash
+docker buildx build --build-arg LINODE_CLI_TOKEN=$LINODE_CLI_TOKEN -t linode . --no-cache
+```
+
 - Exec.
 
 ## 🎁 Sponsoring
