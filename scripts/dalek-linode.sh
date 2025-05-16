@@ -6,7 +6,7 @@
 ## LICENSE:
 ###		GPLv3. <https://github.com/ciro-mota/dalek-linode/blob/main/LICENSE>
 ## CHANGELOG:
-### 	Last Update 01/06/2024. <https://github.com/ciro-mota/dalek-linode/commits/main>
+### 	Last Update 16/05/2025. <https://github.com/ciro-mota/dalek-linode/commits/main>
 
 set -e
 
@@ -17,7 +17,9 @@ listNodeBalancersIds=$(linode-cli nodebalancers list --text --format "id" | tail
 listLKEIds=$(linode-cli lke clusters-list --text --format "id" | tail -n +2)
 tagName=("prod"
 	"Production"
-	"PROD")
+	"PROD"
+	"prd"
+	"PRD")
 
 ## Check, preserve and delete VMs:
 
