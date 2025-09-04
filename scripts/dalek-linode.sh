@@ -121,4 +121,4 @@ for idL in $listLKEIds; do
 	fi
 done
 
-printf "\033[32;1mNothing more to do. \xE2\x9C\x94 \033[0m\n\n"
+printf "\033[32;1mNothing more to do. \342\234\224 \033[0m\n\n"
