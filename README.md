@@ -59,10 +59,14 @@ export LINODE_CLI_TOKEN="your-personal-access-token-here"`
 - Build:
 
 ```bash
-docker buildx build --build-arg LINODE_CLI_TOKEN=$LINODE_CLI_TOKEN -t linode . --no-cache
+docker buildx build -t linode . --no-cache
 ```
 
-- Exec.
+- Exec:
+
+```bash
+docker container run -it -e LINODE_CLI_TOKEN=$LINODE_TOKEN linode
+```
 
 ## 🎁 Sponsoring
 
