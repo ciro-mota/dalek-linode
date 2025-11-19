@@ -67,9 +67,3 @@ docker buildx build -t linode . --no-cache
 ```bash
 docker container run -it -e LINODE_CLI_TOKEN=$LINODE_TOKEN linode
 ```
-
-## 🎁 Sponsoring
-
-If you like this work, give me it a star on GitHub, and consider supporting it buying me a coffee:
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
